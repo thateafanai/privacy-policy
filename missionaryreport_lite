@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - BCM Missionary Monthly Report System</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 32px 32px 32px;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #254060;
+      font-size: 2em;
+      margin-bottom: 0.3em;
+      letter-spacing: 0.02em;
+    }
+    h2 {
+      color: #295ca7;
+      font-size: 1.18em;
+      margin-top: 2em;
+      border-bottom: 1px solid #e2e6ea;
+      padding-bottom: 0.25em;
+      font-weight: 600;
+    }
+    ul, ol {
+      margin-left: 1.5em;
+      margin-bottom: 1em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    p, li {
+      font-size: 1.06em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .contact {
+      margin-top: 1.2em;
+      background: #f1f4f8;
+      padding: 1.1em 1.5em;
+      border-radius: 8px;
+      font-size: 1.06em;
+      box-shadow: 0 1px 3px 0 rgba(60,72,88,0.03);
+    }
+    a {
+      color: #1a70b8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    strong {
+      color: #223b5b;
+    }
+    /* Responsive for mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 5vw 16px 5vw;
+        font-size: 1em;
+      }
+      h1 {
+        font-size: 1.35em;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      ul, ol {
+        margin-left: 1em;
+      }
+      .contact {
+        padding: 1em 4vw;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>BCM Missionary Monthly Report System - Privacy Policy</h1>
+  <p><strong>Last updated:</strong> August 2025</p>
+
+  <div class="section">
+    <h2>PURPOSE OF THIS APP</h2>
+    <p>
+      This application is exclusively designed for <strong>Baptist Church of Mizoram (BCM)</strong> missionaries to submit their monthly ministry reports digitally.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>DATA COLLECTION</h2>
+    <p>We collect only ministry-related information necessary for monthly reporting:</p>
+    <ul>
+      <li>Personal identification (name, position, location).</li>
+      <li>Ministry activities and statistics.</li>
+      <li>Contact information for official correspondence.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>DATA STORAGE</h2>
+    <ul>
+      <li><strong>Local Storage:</strong> All data is primarily stored on your device using a secure local database.</li>
+      <li>Data remains under your control and can be deleted anytime.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>DATA USAGE</h2>
+    <p>Your data is used solely for:</p>
+    <ul>
+      <li>Generating monthly ministry reports.</li>
+      <li>Tracking ministry activities and progress.</li>
+      <li>Official BCM reporting requirements.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>DATA SHARING</h2>
+    <p>We do <strong>NOT</strong>:</p>
+    <ul>
+      <li>Sell or share your data with third parties.</li>
+      <li>Use your data for marketing purposes.</li>
+      <li>Access your data without your consent.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>CLOUD SYNC</h2>
+    <ul>
+      <li>When signed in with Google:</li>
+      <ul>
+        <li>Data syncs automatically when internet is available.</li>
+        <li>Encrypted transmission to secure Firebase servers.</li>
+        <li>Access limited to your account only.</li>
+        <li>You can disable cloud sync at any time.</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>YOUR RIGHTS</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access all your stored data.</li>
+      <li>Export your reports in various formats.</li>
+      <li>Delete your data permanently.</li>
+      <li>Opt-out of cloud sync (use local storage only).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>SECURITY</h2>
+    <p>We protect your data through:</p>
+    <ul>
+      <li>Device-level security (PIN/password/biometric).</li>
+      <li>No unauthorized access to your reports.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>GOOGLE SERVICES</h2>
+    <ul>
+      <li>When using Google Sign-In:</li>
+      <ul>
+        <li>We use Google Firebase for authentication and cloud storage.</li>
+        <li>Google’s privacy policy applies for authentication data: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        <li>You can revoke Google access through your Google Account settings.</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="section contact">
+    <h2>CONTACT</h2>
+    <p>
+      For privacy concerns or data requests:
+      <br>
+      <strong>Developer:</strong> Thatea Fanai<br>
+      <strong>Email:</strong> <a href="mailto:thateafanai@babfo.org">thateafanai@babfo.org</a><br>
+      <strong>Purpose:</strong> BCM Missionary Reporting
+    </p>
+  </div>
+  <p style="margin-top:2em;">
+    By using this app, you consent to this privacy policy.
+  </p>
+</body>
+</html>
