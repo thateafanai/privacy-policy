@@ -5,194 +5,338 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - BCM Missionary Monthly Report System</title>
   <style>
+    :root {
+      --primary: #2C5C8F;
+      --primary-dark: #1E4569;
+      --primary-light: #E8F0FA;
+      --accent: #3D7AB5;
+      --text: #212529;
+      --text-muted: #5A6B7D;
+      --surface: #ffffff;
+      --bg: #EEF2F7;
+      --border: #E2E8F0;
+    }
+    * {
+      box-sizing: border-box;
+    }
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
-      color: #212529;
+      background: var(--bg);
+      color: var(--text);
     }
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       line-height: 1.7;
-      max-width: 900px;
+    }
+    .page {
+      max-width: 880px;
       margin: 0 auto;
-      padding: 32px 32px 32px 32px;
-      box-sizing: border-box;
+      padding: 24px 20px 48px;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: #ffffff;
+      border-radius: 18px;
+      padding: 32px 32px 28px;
+      box-shadow: 0 8px 24px -8px rgba(44, 92, 143, 0.45);
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.75em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
     }
     h1 {
-      color: #254060;
-      font-size: 2em;
-      margin-bottom: 0.3em;
-      letter-spacing: 0.02em;
+      font-size: 1.8em;
+      margin: 0 0 8px;
+      letter-spacing: 0.01em;
+      font-weight: 700;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 1.02em;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .updated-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      font-size: 0.85em;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: 18px;
+      box-shadow: 0 2px 12px -4px rgba(33, 41, 49, 0.08);
+      padding: 8px 32px 16px;
     }
     h2 {
-      color: #295ca7;
-      font-size: 1.18em;
-      margin-top: 2em;
-      border-bottom: 1px solid #e2e6ea;
-      padding-bottom: 0.25em;
-      font-weight: 600;
+      color: var(--primary-dark);
+      font-size: 1.12em;
+      margin: 0 0 0.6em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .badge-new {
+      font-size: 0.62em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--primary-dark);
+      background: #FFE08A;
+      padding: 2px 8px;
+      border-radius: 999px;
+      vertical-align: middle;
     }
     ul, ol {
-      margin-left: 1.5em;
-      margin-bottom: 1em;
+      margin: 0.4em 0 0;
+      padding-left: 1.4em;
     }
     li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.45em;
     }
     p, li {
-      font-size: 1.06em;
+      font-size: 1.0em;
+      color: var(--text);
     }
     .section {
-      margin-bottom: 2em;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-of-type {
+      border-bottom: none;
+    }
+    .section p:first-of-type,
+    .section ul:first-child {
+      margin-top: 0;
+    }
+    .pill-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.6em 0 0;
+    }
+    .pill-list > li {
+      position: relative;
+      padding-left: 22px;
+    }
+    .pill-list > li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .nested {
+      margin-top: 0.5em;
     }
     .contact {
-      margin-top: 1.2em;
-      background: #f1f4f8;
-      padding: 1.1em 1.5em;
-      border-radius: 8px;
-      font-size: 1.06em;
-      box-shadow: 0 1px 3px 0 rgba(60,72,88,0.03);
+      margin-top: 24px;
+      background: var(--primary-light);
+      padding: 1.2em 1.5em;
+      border-radius: 14px;
+      font-size: 1em;
+      border: 1px solid #D6E4F5;
+    }
+    .contact h2::before {
+      background: var(--primary-dark);
     }
     a {
-      color: #1a70b8;
+      color: var(--primary);
+      font-weight: 600;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
     strong {
-      color: #223b5b;
+      color: var(--primary-dark);
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.92em;
+      color: var(--text-muted);
     }
     /* Responsive for mobile */
     @media (max-width: 600px) {
-      body {
-        padding: 16px 5vw 16px 5vw;
-        font-size: 1em;
+      .page {
+        padding: 16px 12px 36px;
+      }
+      .hero {
+        padding: 24px 20px;
+        border-radius: 14px;
       }
       h1 {
-        font-size: 1.35em;
+        font-size: 1.4em;
+      }
+      .card {
+        padding: 4px 20px 10px;
+        border-radius: 14px;
       }
       h2 {
-        font-size: 1em;
+        font-size: 1.02em;
       }
       ul, ol {
-        margin-left: 1em;
-      }
-      .contact {
-        padding: 1em 4vw;
-        font-size: 1em;
+        padding-left: 1.2em;
       }
     }
   </style>
 </head>
 <body>
-  <h1>BCM Missionary Monthly Report System - Privacy Policy</h1>
-  <p><strong>Last updated:</strong> August 2025</p>
+  <div class="page">
+    <div class="hero">
+      <span class="hero-eyebrow">BCM Missionary Report System</span>
+      <h1>Privacy Policy</h1>
+      <p>How we collect, store, and protect your information.</p>
+      <div class="updated-badge">Last updated: June 2026</div>
+    </div>
 
-  <div class="section">
-    <h2>PURPOSE OF THIS APP</h2>
-    <p>
-      This application is exclusively designed for <strong>Baptist Church of Mizoram (BCM)</strong> missionaries to submit their monthly ministry reports digitally.
-    </p>
-  </div>
+    <div class="card">
+      <div class="section">
+        <h2>Purpose of This App</h2>
+        <p>
+          This application is exclusively designed for <strong>Baptist Church of Mizoram (BCM)</strong> missionaries to submit their monthly ministry reports digitally.
+        </p>
+      </div>
 
-  <div class="section">
-    <h2>DATA COLLECTION</h2>
-    <p>We collect only ministry-related information necessary for monthly reporting:</p>
-    <ul>
-      <li>Personal identification (name, position, location).</li>
-      <li>Ministry activities and statistics.</li>
-      <li>Contact information for official correspondence.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Data Collection</h2>
+        <p>We collect only ministry-related information necessary for monthly reporting:</p>
+        <ul class="pill-list">
+          <li>Personal identification (name, position, location).</li>
+          <li>Ministry activities and statistics.</li>
+          <li>Contact information for official correspondence.</li>
+          <li>Google Account information (email, user ID) for authentication and sync, if you sign in with Google.</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>DATA STORAGE</h2>
-    <ul>
-      <li><strong>Local Storage:</strong> All data is primarily stored on your device using a secure local database.</li>
-      <li>Data remains under your control and can be deleted anytime.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Data Storage</h2>
+        <ul class="pill-list">
+          <li><strong>Local Storage:</strong> All data is primarily stored on your device using a secure local database.</li>
+          <li><strong>Cloud Backup:</strong> If signed in with Google, your data is securely backed up to Google Firebase with encryption.</li>
+          <li>Data remains under your control and can be deleted anytime.</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>DATA USAGE</h2>
-    <p>Your data is used solely for:</p>
-    <ul>
-      <li>Generating monthly ministry reports.</li>
-      <li>Tracking ministry activities and progress.</li>
-      <li>Official BCM reporting requirements.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Data Usage</h2>
+        <p>Your data is used solely for:</p>
+        <ul class="pill-list">
+          <li>Generating monthly ministry reports.</li>
+          <li>Tracking ministry activities and progress.</li>
+          <li>Official BCM reporting requirements.</li>
+          <li>Enabling cross-device synchronization via Google Firebase, if signed in with Google.</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>DATA SHARING</h2>
-    <p>We do <strong>NOT</strong>:</p>
-    <ul>
-      <li>Sell or share your data with third parties.</li>
-      <li>Use your data for marketing purposes.</li>
-      <li>Access your data without your consent.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Data Sharing</h2>
+        <p>We do <strong>NOT</strong>:</p>
+        <ul class="pill-list">
+          <li>Sell or share your data with third parties.</li>
+          <li>Use your data for marketing purposes.</li>
+          <li>Access your data without your consent.</li>
+        </ul>
+        <p>
+          When using Google Sign-In, minimal data (user ID, email) is shared with Google Firebase for authentication and sync purposes only.
+        </p>
+      </div>
 
-  <div class="section">
-    <h2>CLOUD SYNC</h2>
-    <ul>
-      <li>When signed in with Google:</li>
-      <ul>
-        <li>Data syncs automatically when internet is available.</li>
-        <li>Encrypted transmission to secure Firebase servers.</li>
-        <li>Access limited to your account only.</li>
-        <li>You can disable cloud sync at any time.</li>
-      </ul>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>In-App Missionary Directory <span class="badge-new">NEW</span></h2>
+        <p>
+          When you sign in with Google, your name, category/position, field, region, church, joined year, and phone
+          number are shared with other signed-in BCM missionaries through the in-app
+          <strong>"BCM Missionaries"</strong> directory, so they can contact you for ministry coordination
+          (e.g. Call/WhatsApp).
+        </p>
+        <p>
+          This directory is visible only to other signed-in users of this app &mdash; not the public. If you do not
+          sign in with Google, you are not listed.
+        </p>
+      </div>
 
-  <div class="section">
-    <h2>YOUR RIGHTS</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li>Access all your stored data.</li>
-      <li>Export your reports in various formats.</li>
-      <li>Delete your data permanently.</li>
-      <li>Opt-out of cloud sync (use local storage only).</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Cloud Sync</h2>
+        <p>When signed in with Google:</p>
+        <ul class="pill-list">
+          <li>Data syncs automatically when internet is available.</li>
+          <li>Encrypted transmission to secure Firebase servers.</li>
+          <li>Access limited to your account only.</li>
+          <li>You can disable cloud sync at any time.</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>SECURITY</h2>
-    <p>We protect your data through:</p>
-    <ul>
-      <li>Device-level security (PIN/password/biometric).</li>
-      <li>No unauthorized access to your reports.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul class="pill-list">
+          <li>Access all your stored data.</li>
+          <li>Export your reports in various formats.</li>
+          <li>Delete your data permanently.</li>
+          <li>Opt-out of cloud sync (use local storage only).</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>GOOGLE SERVICES</h2>
-    <ul>
-      <li>When using Google Sign-In:</li>
-      <ul>
-        <li>We use Google Firebase for authentication and cloud storage.</li>
-        <li>Google’s privacy policy applies for authentication data: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-        <li>You can revoke Google access through your Google Account settings.</li>
-      </ul>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Security</h2>
+        <p>We protect your data through:</p>
+        <ul class="pill-list">
+          <li>Device-level security (PIN/password/biometric).</li>
+          <li>Secure Google authentication with OAuth 2.0.</li>
+          <li>Encrypted cloud storage using Firebase security rules.</li>
+          <li>No unauthorized access to your reports.</li>
+        </ul>
+      </div>
 
-  <div class="section contact">
-    <h2>CONTACT</h2>
-    <p>
-      For privacy concerns or data requests:
-      <br>
-      <strong>Developer:</strong> Thatea Fanai<br>
-      <strong>Email:</strong> <a href="mailto:thateafanai@babfo.org">thateafanai@babfo.org</a><br>
-      <strong>Purpose:</strong> BCM Missionary Reporting
-    </p>
+      <div class="section">
+        <h2>Google Services</h2>
+        <p>When using Google Sign-In:</p>
+        <ul class="pill-list">
+          <li>We use Google Firebase for authentication and cloud storage.</li>
+          <li>Google&rsquo;s privacy policy applies for authentication data: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+          <li>You can revoke Google access through your Google Account settings.</li>
+        </ul>
+      </div>
+
+      <div class="section contact">
+        <h2>Contact</h2>
+        <p>
+          For privacy concerns or data requests:
+          <br>
+          <strong>Developer:</strong> Thatea Fanai<br>
+          <strong>Email:</strong> <a href="mailto:fpthatea@babfo.org">fpthatea@babfo.org</a><br>
+          <strong>Purpose:</strong> BCM Missionary Reporting
+        </p>
+      </div>
+    </div>
+
+    <p class="footer-note">By using this app, you consent to this privacy policy.</p>
   </div>
-  <p style="margin-top:2em;">
-    By using this app, you consent to this privacy policy.
-  </p>
 </body>
 </html>
